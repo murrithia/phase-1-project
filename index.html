@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="center-heading">
+ <h1>Toyota Kenya</h1>
+</div>
+<style>
+    .center-heading {
+        text-align: center;
+    </style>  
+    }
+
+<p id="Toyota">Allan Pro</p>
+<body>
+  <div class="header"></div>
+  <h1 id="Header" Toyota Kenya></h1>
+  <img src="image/images.jpeg" alt="Toyota Kenya">
+  <img src="image/download.jpeg" alt="Toyota Kenya">
+  <img src="image/download (1).jpeg" alt="Toyota Kenya">
+  <div class="container">
+  <img id="movingImage" src="image.jpg" alt="Moving Image">
+</div>
+
+  </style>
+</body>
+<section id="services">
+    <h2>About the Vehicle</h2>
+    <p>The Hilux is known for its robust construction, capable off-road performance, and adaptability to different terrains and environments. It has been used in various applications, including agriculture, construction, military operations, and exploration.
+
+In addition to its reputation for toughness and reliability, the Toyota Hilux also offers modern features and technologies, such as advanced safety systems, infotainment options, and comfort amenities, making it a well-rounded choice for both work and leisure purposes.</p>
+<h3>contact information</h3>
+<p>email -allanmuriithi441@gmail.com</p>
+</html>
+<form id="emailForm">
+  <input type="email" id="emailInput" placeholder="Enter your email address" required>
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  document.getElementById("emailForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Get the value of the email input field
+    var email = document.getElementById("emailInput").value;
+
+    // Construct the mailto URL with the recipient email address and a subject
+    var mailtoUrl = "mailto:allanmuriithi441@gmail.com?subject=New Subscriber&body=Email: " + email;
+
+    // Open the mail client with the mailto URL
+    window.open(mailtoUrl, "_blank");
+
+    // Optionally, you can display a confirmation message
+    alert("Thank you for subscribing!");
+  });
+</script>
+<style>
+  body{
+    background-color: brown;
+  }
+  </style>
